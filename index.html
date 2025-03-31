@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h1>To-do List</h1>
+
+            <form id="todo-form">
+                <div class="input-group">
+                    <input type="text" id="todo-input" placeholder="Add a new todo..." required>
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 8v8" />
+                            <path d="M8 12h8" />
+                        </svg>
+                        Add
+                    </button>
+                </div>
+            </form>
+
+            <div id="todo-list"></div>
+
+            <p id="empty-state" class="empty-state">
+                No todos yet. Add one above!
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
